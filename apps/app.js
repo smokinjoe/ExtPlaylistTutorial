@@ -27,7 +27,8 @@ class App extends React.Component {
           error={ this.props.search.error }
           keyword={ this.props.search.keyword }
           isSearching={ this.props.isSearching }
-          runSearch={ this.props.runSearch } />
+          runSearch={ this.props.runSearch }
+          setSearchKeyword={ this.props.setSearchKeyword } />
       </View>
     );
   }

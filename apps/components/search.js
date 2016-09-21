@@ -1,15 +1,5 @@
 'use strict';
 
-// import React, {
-//   View,
-//   Text,
-//   TextInput,
-//   Image,
-//   StyleSheet,
-//   ActivityIndicatorIOS,
-//   TouchableOpacity
-// } from 'react-native';
-
 import React from 'react';
 import {
   View,
@@ -24,9 +14,6 @@ import {
 import { runSearch } from '../actions';
 
 class Search extends React.Component {
-
-// const Search = (props) => {
-
   handleKeywordChange(event) {
     this.props.setSearchKeyword(event.nativeEvent.text.trim());
   }
