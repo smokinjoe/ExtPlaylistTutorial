@@ -1,6 +1,17 @@
 'use strict';
 
-import React, {
+// import React, {
+//   View,
+//   Text,
+//   TextInput,
+//   Image,
+//   StyleSheet,
+//   ActivityIndicatorIOS,
+//   TouchableOpacity
+// } from 'react-native';
+
+import React from 'react';
+import {
   View,
   Text,
   TextInput,
@@ -12,7 +23,10 @@ import React, {
 
 import { runSearch } from '../actions';
 
-class Search extends React.component {
+class Search extends React.Component {
+
+// const Search = (props) => {
+
   handleKeywordChange(event) {
     this.props.setSearchKeyword(event.nativeEvent.text.trim());
   }
@@ -56,11 +70,11 @@ class Search extends React.component {
 };
 
 Search.propTypes = {
-  error: React.PropType.string.isRequired,
-  keyword: React.PropType.string.isRequired,
-  isSearching: React.PropType.bool.isRequired,
-  setSearchKeyword: React.PropType.func.isRequired,
-  runSearch: React.PropType.func.isRequired
+  error: React.PropTypes.string.isRequired,
+  keyword: React.PropTypes.string.isRequired,
+  isSearching: React.PropTypes.bool.isRequired,
+  setSearchKeyword: React.PropTypes.func.isRequired,
+  runSearch: React.PropTypes.func.isRequired
 };
 
 var styles = StyleSheet.create({
