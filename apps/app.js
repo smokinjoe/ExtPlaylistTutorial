@@ -1,6 +1,7 @@
 'use strict';
 
-import React, {
+import React from 'react';
+import {
   View,
   Text,
   Navigator,
@@ -18,6 +19,7 @@ import {
 import Search from './components/search';
 
 class App extends React.Component {
+// const App = (props) => {
   render() {
     return (
       <View style={ styles.container }>
@@ -33,7 +35,7 @@ class App extends React.Component {
 
 const stateToProps = (state) => {
   return {
-    search: state.search;
+    search: state.search
   };
 };
 
