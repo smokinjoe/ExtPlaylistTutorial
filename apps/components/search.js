@@ -77,7 +77,7 @@ Search.propTypes = {
   runSearch: React.PropTypes.func.isRequired
 };
 
-var styles = StyleSheet.create({
+let styles = StyleSheet.create({
   container: {
     flex: 1,
     flexDirection: 'column',
